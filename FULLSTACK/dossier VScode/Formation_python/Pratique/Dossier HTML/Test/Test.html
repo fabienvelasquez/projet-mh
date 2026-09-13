@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<html>
+
+<head>
+    <title>Test11</title>
+    <link rel="stylesheet" href="test11.css">
+</head>
+
+<body>
+    <section>
+        <h1>Hello Mena</h1>
+        <h2><i>Lorem</i>, ipsum <em>dolor</em>.</h2>
+        <p>How are you today ?</p>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, magnam.</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <img height="500" width="450" src="role-poster-mint.png" alt="Mint Neverness to Everness">
+        <p>Lorem <strong>ipsum dolor</strong> sit amet consectetur, adipisicing elit. Velit omnis ratione modi debitis
+            inventore maiores dolor sed officiis ab quae, totam amet delectus neque quisquam, quaerat veritatis rem
+            vero. Earum incidunt deserunt nobis atque. Omnis, iste voluptas? Ullam pariatur dolorem quia natus in iste
+            blanditiis maxime veritatis quas dolor. Perferendis asperiores suscipit dicta nam consequuntur accusantium
+            ducimus! Placeat, quos voluptates. Aspernatur in nam tenetur accusantium vero neque cupiditate veniam
+            perferendis eaque eius! Praesentium molestiae doloribus accusantium cupiditate accusamus assumenda
+            voluptates, reiciendis dolores cumque iure perspiciatis maiores amet! Nostrum omnis vitae voluptatum
+            doloribus eum velit. Laboriosam aliquam rem nisi molestiae repudiandae?</p>
+    </section>
+    <div>
+        <section>
+            <table borders="10" cellpadding="10" cellspacing="4" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>Col 1</th>
+                        <th>Col 2</th>
+                        <th>Col 3</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Col 1</td>
+                        <td>Col 2</td>
+                        <td>Col 3</td>
+                    </tr>
+                    <tr>
+                        <td>Col 1</td>
+                        <td>Col 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <h4> <i>&#8594;</i> <span>&#8594;</span> Les liens</h4>
+    <a href="https://htmlcheatsheet.com" target="_blank">HTML Cheat Sheet</a>
+    <!-- blank permet d'ouvrir la page dans un nouvel on glet -->
+
+    </section>
+    <div>
+        <h6><i>&#128190;</i>Vidéo</h6>
+        <video src="videotest.mp4" height="500" autoplay muted loop></video>
+        <!-- height pour la taille, autoplay pour jouer automatiquement, muted pour la rendre muette, loop pour la faire jouer en boucle -->
+    </div>
+    <section>
+        <h2>Les formulaires</h2>
+        <form action="">
+            <!-- "for" et "id" permettent de lier le label à l'input -->
+            <label for="name">Nom</label>
+            <input type=" text" id="name" placeholder="Entrez votre nom">
+            <br>
+
+            <label for="age">Entrez votre âge</label>
+            <input type="number" id="age" value="18">
+            <br>
+
+            <!-- input de type select -->
+            <label for="gender">Genre</label>
+            <select id="gender">
+                <option value="Homme">Homme</option>
+                <option selected="selected" value="Femme">Femme</option>
+                <option value="Autre">Autre</option>
+            </select>
+            <div>
+                <!-- input de type radio -->
+                <input type="radio" name="type" id="human">
+                <label for="human">Humain</label>
+
+                <input type="radio" name="type" id="Dog">
+                <label for="Dog">Chien</label>
+
+                <input type="radio" name="type" id="Cat">
+                <label for="Cat">Chat</label><br>
+            </div>
+            <textarea placeholder="Votre message ..." cols="50" rows="15"></textarea>
+        </form>
+    </section>
+</body>
+<footer>
+
+</footer>
+
+</html>

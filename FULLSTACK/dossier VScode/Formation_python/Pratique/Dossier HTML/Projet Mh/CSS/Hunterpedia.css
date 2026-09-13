@@ -1,0 +1,174 @@
+* {
+    font-family: Helvetica;
+    color:azure;
+}
+
+.intro {
+    text-align: center;
+    color:azure;
+    padding: 5px 15px
+}
+nav {
+    display: flex;
+    flex-direction: row;      /* aligne les enfants horizontalement */
+    justify-content: center;  /* centre les boutons horizontalement */
+    align-items: center;      /* centre verticalement si besoin */
+    gap: 10px;                /* espace entre les boutons */
+}
+
+.main_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #2e2e3e;
+    border-radius: 8px;
+}
+
+.main_button:hover {
+    background-color: #45455a; /* effet au survol, optionnel */
+    transition: 0.3s;
+}
+.banniere {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+
+.image_type {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.scriptum {
+    font-size: 10px;
+    color:azure;
+    text-align: center;
+}
+
+
+.titreindex {
+    color:azure;
+    text-align: center;
+    font-weight: bold;
+}
+
+#maintitle {
+    width: fit-content;
+    max-block-size: 170px;
+    margin: 0 auto; /* pour centrer la boîte */
+    padding: 20px 10px; /* un peu d'espace autour du texte */
+}
+
+body {
+    background-image: url("../Images/hunterpedia_papier_peint_monster_hunter_wild.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}   
+h1{
+    color:azure;
+    text-align: center;
+    font-weight: bold; 
+}
+
+.highlight {
+    color: rgb(240, 197, 118);
+    font-weight: bold;
+}
+
+.monster-quote {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.monster-quote img {
+    width: 40%;        /* au lieu de 500px : prend 40% de l'espace du parent */
+    max-width: 500px;  /* mais jamais plus grand que 500px (sécurité grand écran) */
+    height: auto;
+    flex-shrink: 1;     /* autorise à rétrécir si besoin */
+}
+
+.monster-quote blockquote {
+    flex: 1; /* prend tout l'espace restant */
+    border-left: 2px solid #808080;
+    padding: 5px 5px;
+    background-color: #03471436;
+    font-style: italic;
+    margin: 0;
+}
+
+.monster-quote footer {
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: right;
+}
+@media (max-width: 600px) {
+    .monster-quote {
+        flex-direction: column;
+    }
+
+    .monster-quote img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+.icone_table{
+    height: 5px;
+}
+main {
+    max-width: 1200px;      /* empêche que tout s'étire à l'infini sur grand écran */
+    margin: 0 auto;         /* centre le contenu */
+    padding: 0 20px;        /* évite que le texte touche les bords */
+}
+
+.description_monstre {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.table_monster {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 20px auto;      /* centre le conteneur ET garde l'espacement */
+
+}
+
+table {
+    width: 100%;
+    min-width: 600px;       /* évite que les colonnes soient trop écrasées */
+    border-collapse: collapse;
+    margin: 0 auto;          /* centre le tableau si plus petit que le conteneur */
+}
+
+thead {
+    background-color: #2e2e3e;   /* même couleur que tes boutons, pour la cohérence visuelle */
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #808080;   /* même gris que ton blockquote */
+}
+
+th {
+    color: azure;
+    font-weight: bold;
+}
+
+td {
+    color: azure;
+}

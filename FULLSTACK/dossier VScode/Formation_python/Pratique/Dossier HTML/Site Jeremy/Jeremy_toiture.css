@@ -1,0 +1,43 @@
+* {
+font-family: Helvetica;
+}
+
+body{
+    background-color: rgb(252, 225, 212);
+}
+
+header{
+    background-color:rgb(218, 192, 181) ;
+    border-style: inset;
+}
+
+.bouton-accueil {
+    display: flex;
+    justify-content: center;
+    /* centre horizontalement */
+    align-items: center;
+    gap: 10px;
+    /* espace entre les boutons */
+    padding: 5px;
+}
+
+.bouton-accueil button {
+    background-color: #997e25;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.bouton-accueil button:hover {
+    background-color: #d4aa5b;
+    transform: scale(1.07);
+}
+
+.bouton-accueil a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
