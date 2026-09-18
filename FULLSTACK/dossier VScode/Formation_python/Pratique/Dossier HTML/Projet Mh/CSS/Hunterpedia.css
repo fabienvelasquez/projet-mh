@@ -41,11 +41,14 @@ nav {
 }
 
 .image_type {
+    margin: 20px;
     display: block;
     width: 100%;
     height: 100%;
     max-width: 800px; 
     margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 i{
@@ -141,37 +144,67 @@ main {
     margin: 0 auto;         /* centre le contenu */
     padding: 0 20px;        /* évite que le texte touche les bords */
 }
-
-.description_monstre {
-    width: 100%;
-    margin: 20px 0;
+/* Parent global - évite le débordement de toute la page */
+body {
+    overflow-x: hidden;
 }
 
-.table_monster {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.table_container {
     width: 100%;
     max-width: 100%;
-    margin: 20px auto;      /* centre le conteneur ET garde l'espacement */
-
+    overflow-x: auto;
+    margin: 20px auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.icon_table_monster{
+    max-width: 40px;
 }
 
 table {
     width: 100%;
-    min-width: 600px;       /* évite que les colonnes soient trop écrasées */
+    min-width: 600px;
     border-collapse: collapse;
-    margin: 0 auto;          /* centre le tableau si plus petit que le conteneur */
+    margin: 0 auto;
+}
+table.table_monster td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.table_monster td img,
+.icon_table_monster {
+    display: block;
+    margin: 0 auto;   /* centre horizontalement l'image elle-même */
+}
+
+@media (max-width: 600px) {
+    .table_container {
+        width: 100vw;              /* prend toute la largeur de l'écran */
+        margin: 0 auto;
+        padding: 0 10px;
+        
+    }
+
+    table.table_monster {
+        min-width: 500px;          /* réduit légèrement le minimum pour mobile */
+        font-size: 13px;           /* texte plus petit pour gagner de la place */
+    }
+
+    .icon_table_monster {
+        width: 25px;                /* icônes plus petites sur mobile */
+        height: 25px;
+    }
 }
 
 thead {
-    background-color: #2e2e3e;   /* même couleur que tes boutons, pour la cohérence visuelle */
+    background-color: #aeaed457;   /* même couleur que tes boutons, pour la cohérence visuelle */
 }
 
 th, td {
     padding: 8px 12px;
     text-align: left;
-    border: 1px solid #808080;   /* même gris que ton blockquote */
+    border: 1px solid #392cac;   /* même gris que ton blockquote */
 }
 
 th {
