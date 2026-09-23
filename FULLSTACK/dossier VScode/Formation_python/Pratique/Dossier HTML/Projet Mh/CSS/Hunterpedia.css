@@ -2,12 +2,14 @@
     font-family: Helvetica;
     color:azure;
 }
-
+/* 
 .intro {
     text-align: center;
     color:azure;
     padding: 5px 15px
 }
+    à voir si je garde ou non
+*/
 nav {
     display: flex;
     flex-direction: row;      /* aligne les enfants horizontalement */
